@@ -1,0 +1,31 @@
+buatlah program java untuk membuat vending machine.
+Gunakan scanner keyboard untuk memilih kopi yang hendak dipilih.
+Sebelum memilih kopi dan topping, tampilkan dulu daftar kopi dan topping yang ada.
+Petunjuk, gunakan arraylist berbentuk kopi untuk menyimpan kopi ke dalam list, lalu tampilkan
+ke dalam command line seperti di bawah ini
+
+        ArrayList<Kopi> kopi   = new ArrayList<Kopi>();
+
+        MesinKopi robusta = new MesinKopi();
+
+	for(int i=0; i< kopi.size();i++){
+            int j= i+1;
+            System.out.println("Menu kopi adalah "+j+" "+kopi.get(i));
+        }
+
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Masukan kopi yang mau dipilih ");
+        int pilihanKopi = keyboard.nextInt() -1;
+
+class kopi memiliki atribut nama_kopi dan asal_kopi yang berjenis string. 
+Ada 3 jenis kopi yang disediakan, yaitu arabica (asal timur tengah), robusta (asal eropa)dan kopi Flores (asal asia).
+Ketika memilih kopi, handle jenis input dari keyboard menggunakan 
+1. ArrayIndexOutOfBoundsException jika nomor yang diinputkan lebih dari 3
+2. InputMismatchException jika yang diinputkan bukan angka
+Yang ada lakukan adalah menambahkan :
+a. Class Kopi
+b. Handle input keyboard dengan Try & Catch
+c. Tambahkan semua objek kopi yang telah didefinisikan dengan ke dalam arraylist Kopi
+
+Setelah memilih kopi, tampilkan pesan "Pesanan anda adalah kopi X yang berasal dari Y"
+
